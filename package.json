@@ -1,0 +1,26 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/01-index.js",
+    "dev": "npx tsx src/01-index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UjjwalGarai/ts-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/UjjwalGarai/ts-learning/issues"
+  },
+  "homepage": "https://github.com/UjjwalGarai/ts-learning#readme",
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

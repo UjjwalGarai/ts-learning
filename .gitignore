@@ -1,0 +1,7 @@
+# Folder
+dist/
+node_modules
+
+secret.json
+
+*.log
