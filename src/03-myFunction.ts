@@ -22,10 +22,44 @@ function loggedInPage(username: string, email: string, isPaid: boolean = false){
 }
 
 const checkPaidUser = loggedInPage('Ritesh','r@code.com' )
-console.log(typeof checkPaidUser)
+// console.log(typeof checkPaidUser)
 if(checkLoggedIn === "400"){
-    console.log('Checeked')
+    // console.log('Checeked')
 }
+
+
+const getVal = (n: number): string | number =>{
+    if(n > 100){
+        return 200
+    }
+    return 'I am working'
+}
+
+function checkErrormsg(msg: string):void {
+    console.error(msg)
+}
+
+function handleError(err: string): never{
+    throw new Error(err)
+}
+
+type Role = "admin" | "user"
+
+const authorizeduser = (role: Role): string => {
+    switch (role) {
+        case "admin":
+            return `you can do anything`
+        case "user":
+            return  `you can do anything`
+        default:
+            const _unauthorized : never = role
+            throw new Error(`Invalid role ${_unauthorized}`)
+    }
+}
+
+// authorizeduser('admin')
+// authorizeduser("Developer")
+
 
 // console.log(addTwo("Ujjwal"))
 // console.log(addTwo(false))
